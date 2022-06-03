@@ -1,1 +1,47 @@
-.header {}
+.container{
+    max-width: 1110px;
+    margin: 0 auto;
+    border: 0.1px solid rgb(27, 14, 210);
+    font-family: Lato;
+}
+.header__menu{
+    display: flex;
+    justify-content: space-between;
+
+}
+.header__log{
+    margin: 38px 30px 0 0;
+    img{
+        width: 40px;
+        height: 40px;
+    }
+}
+.header__img{
+    padding:  0 0 5px 0;
+}
+.header__list{
+    display: flex;
+}
+.header__info{
+    display: flex;
+    margin: 0 0 22px 0;
+    li{
+        font-size: 13px;
+        line-height: 17px;
+        margin: 0 41px 0 0;
+    }
+}
+.header__list{
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #222222;
+    font-weight: 700;
+    li{
+        margin: 0 68px 0 0;
+    }
+   li:last-child{
+    margin: 0;
+   }
+}
