@@ -1,7 +1,7 @@
 .faq__container{
     max-width: 1110px;
     margin: 0 auto;
-    padding: 144px 0 0 0;
+    padding: 144px 0 76px 0;
 }
 .faq__faq{
     font-family: 'Lato';
@@ -21,6 +21,79 @@
     color: #333333;
     margin: 40px 0 61px 0;
     b{
-        color:rgba(0, 95, 163, 1)
+        color:rgba(0, 95, 163, 1);
     }
 }
+  input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+  .row {
+    display:flex;
+    .col {
+      flex:1;
+      &:last-child {
+        margin-left: 15px;
+      }
+    }
+  }
+  .tabs {
+      max-width: 730px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 4px -2px rgba(0,0,0,0.5);
+  }
+  .tab {
+    width: 730px;
+    color:#222222;
+    overflow: hidden;
+    &-label {
+      display: flex;
+      justify-content: space-between;
+      padding: 1em;
+      background: #6022a1;;
+      font-weight: bold;
+      cursor: pointer;
+      &:hover {
+        background: darken(rgb(13, 5, 5), 10%);
+      }
+      &::after {
+        content: "\276F";
+        width: 10px;
+        height: 20px;
+        text-align: center;
+        transition: all .35s;
+      }
+    }
+    &-content {
+    color: #222222;
+      max-height: 0;
+      padding: 0 1em;
+      background: rgb(43, 220, 16);
+      transition: all 0.1s;
+    }
+    &-close {
+      display: flex;
+      justify-content: flex-end;
+      padding: 15px;
+      font-size: 15px;
+      cursor: pointer;
+      &:hover {
+        background: darken(rgb(215, 225, 14), 10%);
+      }
+    }
+  }
+  
+  input:checked {
+    + .tab-label {
+      background: darken( rgb(128, 174, 235), 10%);
+      &::after {
+        transform: rotate(90deg);
+      }
+    }
+    ~ .tab-content {
+      max-height: 10050px;
+      padding: 10px;
+    }
+  }
