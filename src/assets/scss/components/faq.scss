@@ -51,27 +51,27 @@
     &-label {
       display: flex;
       justify-content: space-between;
-      padding: 1em;
-      background: #6022a1;;
+      padding: 25px;
+      background:  rgb(128, 174, 235);
       font-weight: bold;
       cursor: pointer;
       &:hover {
-        background: darken(rgb(13, 5, 5), 10%);
+        background: darken(rgb(128, 174, 235), 10%);
       }
-      &::after {
+      &::before {
         content: "\276F";
         width: 10px;
         height: 20px;
         text-align: center;
-        transition: all .35s;
+        transition: all 0.1s;
       }
     }
     &-content {
-    color: #222222;
+    color: #ffffff;
       max-height: 0;
-      padding: 0 1em;
-      background: rgb(43, 220, 16);
-      transition: all 0.1s;
+      padding: 1px;
+      background: rgb(128, 174, 235);
+      transition: all 0.2s;
     }
     &-close {
       display: flex;
@@ -79,16 +79,13 @@
       padding: 15px;
       font-size: 15px;
       cursor: pointer;
-      &:hover {
-        background: darken(rgb(215, 225, 14), 10%);
-      }
     }
   }
   
   input:checked {
     + .tab-label {
       background: darken( rgb(128, 174, 235), 10%);
-      &::after {
+      &::before {
         transform: rotate(90deg);
       }
     }
