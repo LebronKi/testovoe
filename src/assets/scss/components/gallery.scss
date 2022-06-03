@@ -1,0 +1,26 @@
+.gallery{
+    background: #EBEBEB;
+}
+.gallery__container{
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 140px 0;
+}
+.gallery__title{
+font-family: 'Merriweather';
+font-style: normal;
+font-weight: 900;
+font-size: 48px;
+line-height: 69px;
+color: #333333;
+margin: 0 0 42px 0;
+}
+.gallery__grid{
+    display: grid;
+    grid-template-columns:auto auto  auto;
+    grid-template-rows: 255px 255px;
+    gap: 30px;
+}
+.gallery__first{
+    grid-column: 1 / 3;
+}

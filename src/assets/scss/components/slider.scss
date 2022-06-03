@@ -1,5 +1,6 @@
 .slider{
     position: relative;
+    margin: 0 auto;
 
 }
 .slider__container{
@@ -27,9 +28,33 @@
     font-size: 18px;
     cursor: pointer;
     border: none;
+    margin: 0 0 120px 0;
     &:active{
         position: relative;
         top: 2px;
 
     }
 }
+.pagination{
+    display: flex;
+    position: absolute;
+    margin: 0 0 113px 0;
+
+    justify-content: space-between;
+
+}
+.touch{
+    display: flex;
+    margin: 0 830px 0 0;
+}
+.dot{
+    margin: 0 40px 0 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+}
+.arrow {
+    display: flex;
+}
+

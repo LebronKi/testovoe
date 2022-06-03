@@ -1,0 +1,26 @@
+.faq__container{
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 144px 0 0 0;
+}
+.faq__faq{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 33px;
+    color: #BDBDBD;
+}
+.faq__answer{
+    max-width: 347px;
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 69px;
+    color: #333333;
+    margin: 40px 0 61px 0;
+    b{
+        color:rgba(0, 95, 163, 1)
+    }
+}
