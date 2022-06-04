@@ -58,19 +58,11 @@ color: #FFFFFF;
 }
 .subscribe{
 display: flex;
-flex-wrap: wrap;
-}
-p{
-font-family: 'Lato';
-font-weight: 400;
-font-size: 16px;
-line-height: 22px;
-color: #FFFFFF;
-
+flex-wrap: wrap ;
 }
 .burakov{
     text-align: left;
-    margin: 0 30px 35px 0;
+    margin: 0 30px 0 0;
 }
 .dima{
     margin: 15px 0 0 0px;
@@ -109,4 +101,18 @@ color: #FFFFFF;
     &::placeholder{
         text-align: left;
     }
+}
+p{
+    font-family: 'Lato';
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+color: #FFFFFF;
+    margin: 35px 0 0 0;
+}
+.btn {
+    padding: 12px 35px;
+    color:#fff;
+    background: #005FA3;
+    margin: 50px 0 40px 326px;
 }
