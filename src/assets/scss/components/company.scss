@@ -39,7 +39,6 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    justify-content: flex-end;
 
 }
 .company__case{
@@ -85,5 +84,26 @@ font-weight: 700;
 font-size: 14px;
     a{  
     color: #005FA3;
+    }
 }
+@media (min-width:320px) and (max-width:320px){
+    .company__container{
+        padding: 20px 0;
+    }
+    .company__about{
+        text-align: center;
+        font-size: 35px;
+    }
+    .company__title{
+        text-align: center;
+        font-size: 35px;
+    }
+    .company__discription{
+        text-align: justify;
+        padding: 0 14px 14px 14px;
+    }
+    .company__item{
+        display: flex;
+        justify-content: center;
+    }
 }

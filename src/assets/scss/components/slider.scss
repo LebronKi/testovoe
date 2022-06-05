@@ -50,3 +50,34 @@
     bottom: 113px;
     right: 405px;
 }
+@media (min-width:320px) and (max-width:320px){
+    .slider-item{
+        img{
+            height: 200px;
+        }
+    }
+    .slider-item__title{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        font-size: 14px;
+        max-width: 200px;
+        line-height: 30px;
+    }
+    .slider-item__flex{
+        display: none;
+    }
+    .slider-item__btn{
+         padding: 5px 15px;
+        background: #005FA3;
+        color: #fff;
+        position: absolute;
+        top:120px;
+        left: 30px;
+        border:none; 
+        font-family: 'Lato';
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 25px;
+    }
+}

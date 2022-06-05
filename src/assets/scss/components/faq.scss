@@ -81,3 +81,18 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (min-width:320px) and (max-width:320px){
+  .faq__container{
+    padding: 20px 0;
+  }
+  .faq__faq{
+    text-align: center;
+  }
+  .faq__answer{
+    font-size: 35px;
+    text-align: center;
+  }
+  .faq__img{
+    display: none;
+  }
+}
