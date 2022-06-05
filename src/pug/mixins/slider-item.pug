@@ -1,0 +1,14 @@
+mixin slider-item(args={})
+    div.slider-item
+        img(src=args.img, alt="item").slider-item__img
+        .slider-item__title=args.title
+        button.slider-item__btn  Связь с нами
+        .slider-item__flex 
+            .slider-item__pagination     
+                .dot 
+                .dot 
+                .dot 
+                .dot
+            .slider-item__press   
+                img(src="./assets/imgs/slider__button-prev.png", alt="s")   
+                img(src="./assets/imgs/slider__button-next.png", alt="s")   

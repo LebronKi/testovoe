@@ -1,21 +1,24 @@
+include ../mixins/slider-item.pug
 .slider
-    img(src="./assets/imgs/piter.png", alt=""   )
-    .slider__container
-        p.slider__title Бухгалтерские услуги в Санкт-Петербурге
-        button.button Связь с нами
-        .pagination 
-            .touch
-                .dot
-                .dot
-                .dot
-                .dot
-            .arrow  
-                .prev 
-                    img(src="./assets/imgs/slider__button-prev.png", alt="prev")
-                .right
-                    img(src="./assets/imgs/slider__button-next.png", alt="prev")    
-    
-
-
-
-            
+    .swiper
+        .swiper-wrapper
+            .swiper-slide
+                +slider-item({
+                    img: "./assets/imgs/piter.png",
+                    title:'Бухгалтерские услуги в Санкт-Петербурге', 
+                })
+            .swiper-slide
+                +slider-item({
+                    img: "./assets/imgs/piterSec.jpg",
+                    title:'Бухгалтерские услуги в Санкт-Петербурге', 
+                })
+            .swiper-slide
+                +slider-item({
+                    img: "./assets/imgs/piterThree.jpg",
+                    title:'Бухгалтерские услуги в Санкт-Петербурге', 
+                })
+            .swiper-slide
+                +slider-item({
+                    img: "./assets/imgs/piterFour.jpg",
+                    title:'Бухгалтерские услуги в Санкт-Петербурге', 
+                })
