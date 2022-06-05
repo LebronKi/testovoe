@@ -1,0 +1,36 @@
+.end__container{
+    max-width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0 30px;
+}
+.end__left{
+    font-family: 'Lato';
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    color: #000000;
+}
+.end__right{
+    font-family: 'Lato';
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    color: #000000;
+}
+@media (min-width:320px) and (max-width:320px){
+    .end__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    .end__left{
+        margin: 10px 0;
+    }
+    .end__right{
+        margin: 0 0 10px 0;
+    }
+}
